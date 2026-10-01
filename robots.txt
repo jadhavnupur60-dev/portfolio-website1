@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jadhavnupur60-dev.github.io/portfolio-website/sitemap.xml
+Sitemap: https://jadhavnupur60-dev.github.io/portfolio-website1/sitemap.xml
