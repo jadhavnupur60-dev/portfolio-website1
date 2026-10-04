@@ -1,18 +1,110 @@
-/* Error: Undefined variable.
- *    ,
- * 17 |       color: $primary-color;
- *    |              ^^^^^^^^^^^^^^
- *    '
- *   scss\header.scss 17:14  @use
- *   scss\main.scss 3:1      root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 17 \2502        color: $primary-color;\d\a    \2502               ^^^^^^^^^^^^^^\a    \2575 \a   scss\\header.scss 17:14  @use\a   scss\\main.scss 3:1      root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+header nav .logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #2563eb;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+header nav ul a:hover {
+  color: #2563eb;
+}
+
+.hero {
+  padding: 5rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(135deg, #2563eb, #1e293b);
+  color: #ffffff;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.projects {
+  padding: 4rem 1.5rem;
+}
+.projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.projects .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+.projects .card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.about {
+  padding: 4rem 1.5rem;
+  background-color: #ffffff;
+}
+.about h2 {
+  margin-bottom: 1rem;
+}
+
+.contact {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
+.contact .btn {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  margin-top: 1rem;
+}
+.contact .btn:hover {
+  background-color: rgb(7.2829131653%, 29.8599439776%, 79.3837535014%);
+}
+
+/*# sourceMappingURL=style.css.map */
