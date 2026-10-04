@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <!-- Character Encoding -->
     <meta charset="UTF-8">
 
@@ -23,6 +24,9 @@
 
     <meta name="robots"
           content="index, follow">
+
+    <!-- Link to Compiled Sass Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -51,13 +55,44 @@
 
 <body>
 
-    <h1>Nupur Jadhav</h1>
+    <header>
+        <nav>
+            <div class="logo">Nupur Jadhav</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <h2>MCA Student</h2>
+    <main>
+        <section class="hero">
+            <h1>Nupur Jadhav</h1>
+            <p>MCA Student | Web Developer</p>
+        </section>
 
-    <p>
-        Welcome to my portfolio website.
-    </p>
+        <section id="about" class="about container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio website. MCA student interested in web development and software projects.</p>
+        </section>
+
+        <section id="projects" class="projects container">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Portfolio Website</h3>
+                    <p>Built using HTML, Sass, and GitHub Pages.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact container">
+            <h2>Contact</h2>
+            <p>Get in touch for collaborations or opportunities.</p>
+            <a href="mailto:example@email.com" class="btn">Email Me</a>
+        </section>
+    </main>
 
 </body>
 
