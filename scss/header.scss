@@ -1,0 +1,30 @@
+header {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: $primary-color;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 1.5rem;
+
+      a:hover {
+        color: $primary-color;
+      }
+    }
+  }
+}
